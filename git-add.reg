@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; 文件夹空白处右键
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GitAdd]
+@="Git Add All"
+"Icon"="C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GitAdd\command]
+@="cmd /c \"cd /d %V && git add .\""
+
+; 选中文件夹后右键
+[HKEY_CLASSES_ROOT\Directory\shell\GitAdd]
+@="Git Add All"
+"Icon"="C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico"
+
+[HKEY_CLASSES_ROOT\Directory\shell\GitAdd\command]
+@="cmd /c \"cd /d %V && git add .\""
